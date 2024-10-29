@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "title": "Welcome",
+  "subtitle": "Getting Started",
+  "body": "This is a Flutter app demonstrating localization with English, Spanish, and Italian.",
+  "textInput": "Thank you for using the app, {name}!",
+  "textInputHint": "Enter your name",
+  "buttonText": "Submit"
+}

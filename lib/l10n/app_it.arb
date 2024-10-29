@@ -1,0 +1,9 @@
+{
+  "@@locale": "it",
+  "title": "Benvenuto",
+  "subtitle": "Iniziamo",
+  "body": "Questa è un'app Flutter che dimostra la localizzazione con inglese, spagnolo e italiano.",
+  "textInput": "Grazie per aver usato l'app, {name}!",
+  "textInputHint": "Inserisci il tuo nome",
+  "buttonText": "Invia"
+}
