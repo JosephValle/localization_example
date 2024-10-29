@@ -4,6 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:localization_example/test_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -26,7 +27,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Localization Test',
+      title: 'Flutter Localization Example',
       locale: _locale,
       localizationsDelegates: const [
         AppLocalizations.delegate,
@@ -40,7 +41,7 @@ class _MyAppState extends State<MyApp> {
         Locale('es'),
       ],
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
       // Would control this with a cubit or bloc in a real app
