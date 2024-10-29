@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:localization_example/test_screen.dart';
+import 'package:localization_example/home_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Localization Example',
+      // I Would control this with a cubit or bloc in a real app
       locale: _locale,
       localizationsDelegates: const [
         AppLocalizations.delegate,
@@ -35,6 +36,7 @@ class _MyAppState extends State<MyApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
+      // Supported languages
       supportedLocales: const [
         Locale('en'),
         Locale('it'),
@@ -44,7 +46,6 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      // Would control this with a cubit or bloc in a real app
       home: HomeScreen(onLocaleChange: _setLocale),
     );
   }
